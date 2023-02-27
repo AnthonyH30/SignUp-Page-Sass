@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin button{
+    padding: 10px 20px;
+    font-size: 12px;
+    @include center;
+    gap: 10px;
+    background-color: $bg-color-secondary;
+    border: .6px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@mixin dash{
+    width: 10px;
+    height: 2px;
+    background-color: $text-color-secondary;
+}
+
+@mixin input{
+    height: 40px;
+    width: 100%;
+    background-color: $bg-color-secondary;
+    border: none;
+    border-bottom: 1px solid $text-color-secondary;
+    outline: none;
+}
